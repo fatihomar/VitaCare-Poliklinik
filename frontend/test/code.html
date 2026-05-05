@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>VitaCare Premium - Patient Portal Landing</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#1b1b1d",
+                    "on-primary-container": "#7d839a",
+                    "on-primary-fixed": "#151b2d",
+                    "primary-container": "#151b2d",
+                    "on-error-container": "#93000a",
+                    "on-surface-variant": "#46464c",
+                    "secondary-fixed-dim": "#68dba9",
+                    "inverse-on-surface": "#f3f0f2",
+                    "inverse-surface": "#303032",
+                    "primary-fixed": "#dce1fb",
+                    "surface-tint": "#585e73",
+                    "tertiary-container": "#2a1700",
+                    "tertiary": "#000000",
+                    "outline-variant": "#c6c6cd",
+                    "on-secondary-fixed-variant": "#005137",
+                    "on-background": "#1b1b1d",
+                    "on-tertiary-fixed-variant": "#653e00",
+                    "error-container": "#ffdad6",
+                    "surface-container-highest": "#e5e2e3",
+                    "tertiary-fixed": "#ffddb8",
+                    "on-tertiary-container": "#b87500",
+                    "on-tertiary-fixed": "#2a1700",
+                    "on-primary": "#ffffff",
+                    "surface": "#fcf8fa",
+                    "on-secondary-container": "#00714e",
+                    "surface-bright": "#fcf8fa",
+                    "primary-fixed-dim": "#c0c6de",
+                    "on-primary-fixed-variant": "#40465a",
+                    "inverse-primary": "#c0c6de",
+                    "primary": "#000000",
+                    "on-error": "#ffffff",
+                    "surface-container": "#f0edef",
+                    "surface-container-low": "#f6f3f4",
+                    "error": "#ba1a1a",
+                    "outline": "#76767d",
+                    "surface-dim": "#dcd9db",
+                    "surface-variant": "#e5e2e3",
+                    "on-tertiary": "#ffffff",
+                    "secondary-container": "#82f5c1",
+                    "tertiary-fixed-dim": "#ffb95f",
+                    "on-secondary-fixed": "#002114",
+                    "background": "#fcf8fa",
+                    "secondary-fixed": "#85f8c4",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#006c4a",
+                    "surface-container-high": "#eae7e9",
+                    "surface-container-lowest": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "container-padding": "32px",
+                    "section-gap": "64px",
+                    "element-gap": "16px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "body-sm": ["Manrope"],
+                    "h2": ["Manrope"],
+                    "h1": ["Manrope"],
+                    "body-lg": ["Manrope"],
+                    "label-caps": ["Manrope"],
+                    "body-md": ["Manrope"],
+                    "h3": ["Manrope"]
+            },
+            "fontSize": {
+                    "body-sm": ["14px", {"lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400"}],
+                    "h2": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "h1": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                    "h3": ["24px", {"lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "600"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex flex-col">
+<nav class="bg-stone-50/80 backdrop-blur-md dark:bg-slate-950/80 docked full-width top-0 sticky z-50 border-b border-stone-200 dark:border-slate-800 shadow-sm">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-extrabold tracking-tighter text-slate-900 dark:text-white">
+                VitaCare Premium
+            </div>
+<div class="hidden md:flex items-center space-x-8 font-['Manrope'] font-medium text-sm tracking-tight">
+<a class="text-slate-600 dark:text-slate-400 hover:text-emerald-600 transition-colors" href="#">Hizmetlerimiz</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-emerald-600 transition-colors" href="#">Hakkımızda</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="font-['Manrope'] font-medium text-sm tracking-tight text-slate-600 dark:text-slate-400 hover:text-emerald-600 transition-colors hover:bg-stone-100 dark:hover:bg-slate-800 rounded-lg transition-all px-4 py-2 active:scale-95 duration-200 ease-in-out">
+                    Giriş Yap
+                </button>
+<button class="font-['Manrope'] font-medium text-sm tracking-tight text-emerald-600 dark:text-emerald-400 hover:bg-stone-100 dark:hover:bg-slate-800 rounded-lg transition-all px-4 py-2 border border-emerald-600/30 active:scale-95 duration-200 ease-in-out">
+                    Randevu Al
+                </button>
+</div>
+</div>
+</nav>
+<main class="flex-grow">
+<section class="max-w-7xl mx-auto px-8 py-section-gap grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-5 flex flex-col items-start space-y-8">
+<div class="inline-flex items-center px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps uppercase tracking-widest">
+                    Prestijli Sağlık Çözümleri
+                </div>
+<h1 class="font-h1 text-h1 text-on-surface tracking-tight leading-tight">
+                    Sağlığınız İçin<br/>Modern &amp; Profesyonel<br/>Yaklaşım.
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                    VitaCare Polyclinic'te en ileri tıbbi teknolojileri, kişiselleştirilmiş hasta deneyimi ile harmanlıyoruz. Sağlığınız en değerli varlığınızdır.
+                </p>
+<div class="flex items-center space-x-4 pt-4">
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-full font-h3 text-[18px] shadow-lg shadow-secondary/20 hover:shadow-xl hover:shadow-secondary/30 transition-all active:scale-95 flex items-center gap-2">
+<span>Randevu Al</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="lg:col-span-7 grid grid-cols-2 gap-4 h-[600px] mt-12 lg:mt-0">
+<div class="flex flex-col gap-4">
+<div class="rounded-xl overflow-hidden h-2/3 bg-surface-container-low relative shadow-sm">
+<img alt="Modern clinic interior lobby with minimalist design, warm lighting, and comfortable seating" class="absolute inset-0 w-full h-full object-cover" data-alt="Modern clinic interior lobby with minimalist design, warm lighting, and comfortable seating" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDeJOutoH3_o8PdLHHx1jWXD7z1_Izc5iIaZpeu5UkcDcbsR51BGAo-xax9igu-ha1vN2Zu7Z62kLKI4sVhUmxnjUyKEFPPwxfdTYxZTOQmdF9Xcazj3Tgn3S-a_uCtf97lLGY0BuvQP6TA-CdlKVoX4f_YMiTdfvaXZIcfCGtQYdpfqgwCdl6UwRXi1C2nQMevXd2NXmyg5qr9uNUY8KrtPjZjes59hjVRe87hWPP-0BCx3C2EiPS_PbvgtvP9l-xMOEe67SmsFb6"/>
+</div>
+<div class="rounded-xl overflow-hidden h-1/3 bg-surface-container-low relative shadow-sm">
+<img alt="Close up of high-tech medical equipment in a bright, clean, sterile environment" class="absolute inset-0 w-full h-full object-cover" data-alt="Close up of high-tech medical equipment in a bright, clean, sterile environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc1P95ttTtcF1ilQ1qOwpDgPiH-pcqE8YJSSQ5STnu4RPqMqQ7QsTsxkK9l3zzFOsK6yjY4jZABzVXu3DG8pq9f4jY6GLEgNyhb-oaEA3i_cZhgo5Nnp6JDym706hLktvbs2rYm9zEKVsu_uoQbi0SAlK1bCOM2Aol9337JR1PtRqQzb5JNXC2Maz8050zJXzB3Iaa8LzEBu7vSLP2cGOSHo5je3OyGB9b2D4Cp6ht9W-UteV38An1JvHoDBPytI1M2dLpLrCttZOU"/>
+</div>
+</div>
+<div class="rounded-xl overflow-hidden h-full bg-surface-container-low relative shadow-sm mt-8">
+<img alt="Professional female doctor in a white coat consulting with a patient in a well-lit modern office" class="absolute inset-0 w-full h-full object-cover" data-alt="Professional female doctor in a white coat consulting with a patient in a well-lit modern office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8ofCGNK2pC6G0eTxZ0iFv09P-_QaRHNwMlma0Udo1q1gE-JVgHK101QLcQRORzx-7vEWOQmHGkrVQtKeoTUPbJAORoyAVpEJ0OphReSUBpB8qG6ErQH5Pvfgv02gFQc8VLwcw8ROeZnOOhOr5gPfRuiiGmJ_G7k8ASSfuIl2rQ_Fk7m7jwi2jYPvyzbH7NKltuQA0tcgNrEqr0ptn0jJ-33YlAvPYK4To3gidIwveEMQg9JcSamrrCfV0hz1z8WyH5TKsQYOCpXkZ"/>
+</div>
+</div>
+</section>
+<section class="max-w-7xl mx-auto px-8 py-section-gap">
+<div class="text-center mb-16">
+<h2 class="font-h2 text-h2 text-on-surface mb-4">Ayrıcalıklı Hizmetlerimiz</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Size özel tasarlanmış alanlarda, alanında uzman hekimlerimizle kapsamlı sağlık hizmetleri sunuyoruz.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/30 hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed mb-6">
+<span class="material-symbols-outlined filled">monitor_heart</span>
+</div>
+<h3 class="font-h3 text-h3 text-on-surface mb-3">Kardiyoloji</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Modern cihazlarla kalp sağlığınızı güvence altına alan detaylı tetkik ve tedavi yöntemleri.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/30 hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed mb-6">
+<span class="material-symbols-outlined filled">psychology</span>
+</div>
+<h3 class="font-h3 text-h3 text-on-surface mb-3">Nöroloji</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Sinir sistemi rahatsızlıklarında uzman kadromuzla erken teşhis ve etkili tedavi süreçleri.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/30 hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed mb-6">
+<span class="material-symbols-outlined filled">spa</span>
+</div>
+<h3 class="font-h3 text-h3 text-on-surface mb-3">Dermatoloji</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Cilt sağlığınız ve estetiğiniz için en yenilikçi tıbbi yaklaşımlar ve profesyonel bakım.</p>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-stone-50 dark:bg-slate-950 w-full py-12 mt-auto border-t border-stone-200 dark:border-slate-800 shadow-sm">
+<div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+<div class="font-bold text-slate-800 dark:text-slate-200 font-['Manrope']">
+                © 2024 VitaCare Polyclinic. Prestijli Sağlık Çözümleri.
+            </div>
+<div class="flex items-center space-x-6 font-['Manrope'] text-xs text-slate-500">
+<a class="text-slate-400 hover:text-slate-600 hover:underline transition-all opacity-90 hover:opacity-100" href="#">KVKK Aydınlatma</a>
+<a class="text-slate-400 hover:text-slate-600 hover:underline transition-all opacity-90 hover:opacity-100" href="#">Gizlilik Politikası</a>
+<a class="text-slate-400 hover:text-slate-600 hover:underline transition-all opacity-90 hover:opacity-100" href="#">İletişim</a>
+</div>
+</div>
+</footer>
+</body></html>

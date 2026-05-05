@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>VitaCare Premium - Login</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#1b1b1d",
+                        "on-primary-container": "#7d839a",
+                        "on-primary-fixed": "#151b2d",
+                        "primary-container": "#151b2d",
+                        "on-error-container": "#93000a",
+                        "on-surface-variant": "#46464c",
+                        "secondary-fixed-dim": "#68dba9",
+                        "inverse-on-surface": "#f3f0f2",
+                        "inverse-surface": "#303032",
+                        "primary-fixed": "#dce1fb",
+                        "surface-tint": "#585e73",
+                        "tertiary-container": "#2a1700",
+                        "tertiary": "#000000",
+                        "outline-variant": "#c6c6cd",
+                        "on-secondary-fixed-variant": "#005137",
+                        "on-background": "#1b1b1d",
+                        "on-tertiary-fixed-variant": "#653e00",
+                        "error-container": "#ffdad6",
+                        "surface-container-highest": "#e5e2e3",
+                        "tertiary-fixed": "#ffddb8",
+                        "on-tertiary-container": "#b87500",
+                        "on-tertiary-fixed": "#2a1700",
+                        "on-primary": "#ffffff",
+                        "surface": "#fcf8fa",
+                        "on-secondary-container": "#00714e",
+                        "surface-bright": "#fcf8fa",
+                        "primary-fixed-dim": "#c0c6de",
+                        "on-primary-fixed-variant": "#40465a",
+                        "inverse-primary": "#c0c6de",
+                        "primary": "#000000",
+                        "on-error": "#ffffff",
+                        "surface-container": "#f0edef",
+                        "surface-container-low": "#f6f3f4",
+                        "error": "#ba1a1a",
+                        "outline": "#76767d",
+                        "surface-dim": "#dcd9db",
+                        "surface-variant": "#e5e2e3",
+                        "on-tertiary": "#ffffff",
+                        "secondary-container": "#82f5c1",
+                        "tertiary-fixed-dim": "#ffb95f",
+                        "on-secondary-fixed": "#002114",
+                        "background": "#fcf8fa",
+                        "secondary-fixed": "#85f8c4",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#006c4a",
+                        "surface-container-high": "#eae7e9",
+                        "surface-container-lowest": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "container-padding": "32px",
+                        "section-gap": "64px",
+                        "element-gap": "16px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-sm": ["Manrope"],
+                        "h2": ["Manrope"],
+                        "h1": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "label-caps": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "h3": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "body-sm": ["14px", { "lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400" }],
+                        "h2": ["32px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "h1": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "h3": ["24px", { "lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex items-center justify-center font-body-md antialiased p-4 relative overflow-hidden">
+<!-- Decorative Background Elements -->
+<div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+<div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-secondary-container/20 blur-3xl"></div>
+<div class="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] rounded-full bg-primary-fixed/20 blur-3xl"></div>
+</div>
+<div class="w-full max-w-md">
+<!-- Brand Header -->
+<div class="text-center mb-8">
+<h1 class="font-h1 text-h1 text-primary mb-2">VitaCare Premium</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Patient Portal Access</p>
+</div>
+<!-- Auth Card -->
+<div class="glass-card rounded-[24px] p-container-padding">
+<!-- Tabs (Visual Only for Demo) -->
+<div class="flex border-b border-surface-variant mb-6 pb-2 gap-element-gap">
+<button class="flex-1 font-h3 text-h3 text-secondary border-b-2 border-secondary pb-2 text-left">Login</button>
+<button class="flex-1 font-h3 text-h3 text-on-surface-variant pb-2 text-left hover:text-on-surface transition-colors">Register</button>
+</div>
+<!-- Form -->
+<form class="flex flex-col gap-element-gap">
+<!-- Email Field -->
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2 uppercase tracking-widest" for="email">Email Address</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline" style="font-variation-settings: 'FILL' 0;">mail</span>
+<input class="w-full bg-surface-container-low border border-surface-variant rounded-lg py-3 pl-10 pr-4 font-body-md text-body-md text-on-surface focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition-all" id="email" placeholder="Enter your email" required="" type="email"/>
+</div>
+</div>
+<!-- Password Field -->
+<div>
+<div class="flex justify-between items-center mb-2">
+<label class="block font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest" for="password">Password</label>
+<a class="font-body-sm text-body-sm text-secondary hover:underline" href="#">Forgot?</a>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline" style="font-variation-settings: 'FILL' 0;">lock</span>
+<input class="w-full bg-surface-container-low border border-surface-variant rounded-lg py-3 pl-10 pr-4 font-body-md text-body-md text-on-surface focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition-all" id="password" placeholder="Enter your password" required="" type="password"/>
+<button class="absolute right-3 top-1/2 -translate-y-1/2 text-outline hover:text-on-surface" type="button">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">visibility_off</span>
+</button>
+</div>
+</div>
+<!-- Submit Button -->
+<button class="w-full bg-secondary text-on-secondary rounded-[1.5rem] py-4 mt-4 font-body-lg text-body-lg font-semibold hover:opacity-90 active:scale-[0.98] transition-all shadow-[0_4px_14px_0_rgba(0,108,74,0.39)]" type="submit">
+                    Sign In to Portal
+                </button>
+</form>
+<!-- Divider -->
+<div class="mt-8 flex items-center gap-4">
+<div class="h-px bg-surface-variant flex-1"></div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">or continue with</span>
+<div class="h-px bg-surface-variant flex-1"></div>
+</div>
+<!-- Social Login (Mock) -->
+<div class="mt-6 flex gap-4">
+<button class="flex-1 bg-surface-container-low border border-surface-variant rounded-lg py-3 flex items-center justify-center hover:bg-surface-container-high transition-colors text-on-surface">
+<span class="font-body-sm text-body-sm font-medium">Google</span>
+</button>
+<button class="flex-1 bg-surface-container-low border border-surface-variant rounded-lg py-3 flex items-center justify-center hover:bg-surface-container-high transition-colors text-on-surface">
+<span class="font-body-sm text-body-sm font-medium">Apple ID</span>
+</button>
+</div>
+</div>
+<!-- Footer Text -->
+<p class="text-center font-body-sm text-body-sm text-on-surface-variant mt-8">
+            Need help accessing your account? <a class="text-secondary font-medium hover:underline" href="#">Contact Support</a>
+</p>
+</div>
+</body></html>
